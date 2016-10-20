@@ -12,7 +12,6 @@ function getDefaultModules() {
             test: /\.js/,
             loader: "babel-loader?presets[]=es2015&presets[]=react",
             include: srcPath,
-
             },
             {
                 test: /\.css/,
@@ -26,6 +25,10 @@ function getDefaultModules() {
             {
                 test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svgs)$/,
                 loader: 'url-loader?limit=8192'
+            },
+            {
+                test: /\.json/,
+                loader: 'json-loader'
             }
         ]
 

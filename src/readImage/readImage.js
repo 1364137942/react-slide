@@ -10,10 +10,20 @@ let fs = Promise.promisifyAll(require("fs"));   //把nodejs原生的fs模块进�
 let readImage = Promise.coroutine(function *(path) {
     let fileHandler = yield fs.readdirAsync(path);
     let list = yield Promise.map(fileHandler, (file) => {
-        return path.concat("/", file);
+        return {
+            src: path.concat("/", file),
+            alt: file
+        }
     });
     return list;
 
 });
 
-module.exports = readImage;
+readImage('../image').then((list) => {
+
+    fs.writeFileAsync('Image.json', JSON.stringify(list), {flag: "w+"});
+}).catch((err) => {
+    console.log(err.stack);
+});
+
+

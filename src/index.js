@@ -5,12 +5,10 @@
 import "./style.less";
 let React = require("react");
 let ReactDom = require("react-dom");
+
 let SlideContent = require("./components/slideContent");
 ReactDom.render(
     <section id="container">
-        <div id="banner">
-
-        </div>
         <SlideContent/>
     </section>,
     document.getElementById('app')
