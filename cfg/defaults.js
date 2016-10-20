@@ -10,15 +10,25 @@ function getDefaultModules() {
     return {
         loaders: [{
             test: /\.js/,
-            loader: "babel-loader",
+            loader: "babel-loader?presets[]=es2015&presets[]=react",
             include: srcPath,
 
-        },
+            },
             {
                 test: /\.css/,
                 loader: "style-loader!css-loader",
                 include: srcPath
-            }]
+            },
+            {
+                test: /\.less/,
+                loader: "style-loader!css-loader!less-loader",
+            },
+            {
+                test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svgs)$/,
+                loader: 'url-loader?limit=8192'
+            }
+        ]
+
     }
 }
 module.exports = {
