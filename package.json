@@ -1,0 +1,29 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "webpack参考yeoman下的react-webpack做的简单配置 ",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env=dev --progress --colors --hot --inline",
+    "dist": "webpack --env=dist & npm run copy",
+    "copy": "copyfiles -f ./src/index.html ./dist"
+  },
+  "author": "ALI",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.5",
+    "minimist": "^1.2.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "devDependencies": {
+    "bower-webpack-plugin": "^0.1.9",
+    "copyfiles": "^1.0.0",
+    "css-loader": "^0.25.0",
+    "open": "0.0.5",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "style-loader": "^0.13.1",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}
