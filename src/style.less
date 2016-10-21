@@ -1,5 +1,34 @@
+body,ul,li{
+  padding: 0;
+  margin: 0;
+}
+.clearFloat(){
+  &:before,&:after{
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
 #container{
   width:800px;
-  height: 200px;
+  height: 480px;
+  margin: 0 auto;
   border: 1px #222222 solid;
 }
+#banner{
+  list-style: none;
+  height: 480px;
+  transition: all 0.8s linear;
+  .clearFloat();
+  & > li{
+    height: 480px;
+    overflow: hidden;
+    float: left;
+    line-height: 480px;
+    & > img{
+      width: 100%;
+      vertical-align: middle; //去除图片下沉
+    }
+  }
+}
+

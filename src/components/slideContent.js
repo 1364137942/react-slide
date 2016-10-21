@@ -6,12 +6,12 @@ let React = require('react');
 let SlideList = require("./slideList");
 
 class SlideContent extends React.Component{
-    construct(){
 
-    }
     render(){
         return(
-            <SlideList/>
+            <SlideList
+                width="800"
+            />
         )
     }
 }

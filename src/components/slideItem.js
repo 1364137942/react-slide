@@ -3,10 +3,15 @@
  */
 let React = require('react');
 class SlideItem extends React.Component{
+    constructor(props) {
+        super(props);
+    }
     render(){
+        let {item, count} = this.props;
+        let width = 100 / count + "%";
         return(
-            <li>
-                <img src={this.props.item} alt={this.props}/>
+            <li style={{width: width}}>
+                <img src={item.src} alt={item.alt}/>
             </li>
         )
     }
