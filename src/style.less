@@ -15,6 +15,7 @@ body,ul,li{
   margin: 0 auto;
   border: 1px #222222 solid;
   overflow: hidden;
+  position: relative;
 }
 #banner{
   list-style: none;
@@ -31,4 +32,26 @@ body,ul,li{
     }
   }
 }
+
+#slide-dot-box{
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  & .slide-dot{
+    display: inline-block;
+    border-radius: 50%;
+    border: #aaa 2px solid;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    margin: 4px;
+    cursor: pointer;
+  }
+  & .slider-dot-selected{
+    background: gold;
+  }
+}
+
 
