@@ -16,10 +16,9 @@ let readImage = Promise.coroutine(function *(path) {
         }
     });
     return list;
-
 });
 
-readImage('../image').then((list) => {
+readImage('./image').then((list) => {
 
     fs.writeFileAsync('Image.json', JSON.stringify(list), {flag: "w+"});
 }).catch((err) => {

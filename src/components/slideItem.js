@@ -1,7 +1,7 @@
 /**
  * Created by 子健 on 2016-10-20.
  */
-let React = require('react');
+// let React = require('react');
 class SlideItem extends React.Component{
     constructor(props) {
         super(props);

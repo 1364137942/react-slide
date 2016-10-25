@@ -20,7 +20,15 @@ let config = Object.assign({}, baseConfig, {
         new webpack.optimize.OccurenceOrderPlugin(),  //根据模块引用频率，来调整模块顺序，定义模块id，引用频率越高，id越短，增加加载速度
         new webpack.optimize.AggressiveMergingPlugin(), //优化代码，合并相似部分，提取公共部分
         new webpack.optimize.DedupePlugin(),  //检测相似文件，合并时去除冗余
+        // new webpack.ProvidePlugin({
+        //     React: "React",
+        //     ReactDom: "ReactDom"
+        // })
     ],
+    externals: {
+        "react2": 'React',
+        'react-dom2': 'ReactDOM'
+    },
     module: defaultSettings.getDefaultModules()
 });
 

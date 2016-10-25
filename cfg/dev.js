@@ -20,6 +20,10 @@ let config = Object.assign({}, baseConfig, {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
     ],
+    externals: {
+        "react2": 'React',
+        'react-dom2': 'ReactDOM'
+    },
     module: defaultSettings.getDefaultModules()
 });
 

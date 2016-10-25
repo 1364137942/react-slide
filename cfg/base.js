@@ -23,5 +23,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx'],
     },
+    alias: {
+        "React": "../src/common/loadReact.js",
+        "ReactDom": "../src/common/loadReactDom.js",
+    },
     module: {}
 };

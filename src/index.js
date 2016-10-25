@@ -3,9 +3,8 @@
  */
 "use strict";
 import "./style.less";
-let React = require("react");
-let ReactDom = require("react-dom");
-
+const ReactDom = require("react-dom2");
+const React = require("react2");
 let SlideContent = require("./components/slideContent");
 ReactDom.render(
     <SlideContent/>,

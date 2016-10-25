@@ -1,11 +1,11 @@
 /**
  * Created by 子健 on 2016-10-20.
  */
-let React = require("react");
+// let React = require("react");
 let SlideItem = require("./slideItem");
 let SlideDots = require("./slideDots");
 let SlideArrow = require("./slideArrow");
-let Images = require("../readImage/Image.json");
+let Images = require("../Image.json");
 
 class SlideList extends React.Component{
     constructor(props){
