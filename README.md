@@ -1,9 +1,12 @@
 # react-slide
 使用webpack依赖管理的基于react开发的轮播图组件
+
 安装依赖
 * npm install
+
 运行
 * npm start
+
 打包（会把`index.html`和`image`文件夹拷贝到`/dist`）
 * npm dist
 
