@@ -1,7 +1,7 @@
 {
-  "name": "test2",
+  "name": "react-slide",
   "version": "1.0.0",
-  "description": "webpack参考yeoman下的react-webpack做的简单配置 ",
+  "description": "使用webpack依赖管理的基于react开发的轮播图组件",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env=dev --progress --colors --hot --inline",
@@ -30,8 +30,6 @@
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "open": "0.0.5",
-    "react-hot-loader": "^3.0.0-beta.5",
-    "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
