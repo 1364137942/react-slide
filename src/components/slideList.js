@@ -5,8 +5,8 @@
 let SlideItem = require("./slideItem");
 let SlideDots = require("./slideDots");
 let SlideArrow = require("./slideArrow");
-let Images = require("../Image.json");
-
+// let Images = require("./Image.json");
+let Images = [{"src":"./image/gamersky_01origin_01_201342012247B8.jpg","alt":"gamersky_01origin_01_201342012247B8.jpg"},{"src":"./image/gamersky_02origin_03_20159121649C66.jpg","alt":"gamersky_02origin_03_20159121649C66.jpg"},{"src":"./image/gamersky_02origin_03_201591616508ED.jpg","alt":"gamersky_02origin_03_201591616508ED.jpg"},{"src":"./image/gamersky_06origin_11.jpg","alt":"gamersky_06origin_11.jpg"},{"src":"./image/gamersky_07origin_13_201311212590E.jpg","alt":"gamersky_07origin_13_201311212590E.jpg"},{"src":"./image/gamersky_07origin_13_20134201224173.jpg","alt":"gamersky_07origin_13_20134201224173.jpg"}];
 class SlideList extends React.Component{
     constructor(props){
         super(props);
@@ -48,7 +48,6 @@ class SlideList extends React.Component{
         if(_n >= this.count){
             _n = _n - this.count;
         }
-
         this.setState({curIndex: _n});
 
     }

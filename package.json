@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env=dev --progress --colors --hot --inline",
+    "server": "node server.js --env=dev",
     "dist": "webpack --env=dist & npm run copy & npm run copy2",
     "copy": "copyfiles -f ./src/index.html ./dist",
     "copy2": "copyfiles -f ./src/image/* ./dist/image"

@@ -17,8 +17,11 @@ module.exports = {
         hot: true,
         port: defaultSettings.port,
         inline: true,
+        stats:{
+            colors: true
+        },
         process: true,
-        colors: true
+        publicPath: defaultSettings.publicPath,
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],

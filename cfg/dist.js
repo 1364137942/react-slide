@@ -31,5 +31,11 @@ let config = Object.assign({}, baseConfig, {
     },
     module: defaultSettings.getDefaultModules()
 });
-
+config.module.loaders.push(
+    {
+        test: /\.(js|jsx)/,
+        loader: "babel-loader?presets[]=es2015&presets[]=react",
+        include: path.join(__dirname, '/../src'),
+    }
+);
 module.exports = config;
