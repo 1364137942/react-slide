@@ -8,7 +8,12 @@ const port = 8001;//浏览器打开端口
 
 function getDefaultModules() {
     return {
-        loaders: [,
+        loaders: [
+            // {
+            //     test: /\.(js|jsx)/,
+            //     loader: "react-hot-loader/webpack!babel-loader?presets[]=es2015&presets[]=react",
+            //     include: srcPath
+            // },
             {
                 test: /\.css/,
                 loader: "style-loader!css-loader",
@@ -23,7 +28,7 @@ function getDefaultModules() {
                 loader: 'url-loader?limit=8192'
             },
             {
-                test: /\.json/,
+                test: /\.json$/,
                 loader: 'json-loader'
             }
         ]
